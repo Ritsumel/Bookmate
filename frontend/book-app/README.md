@@ -1,59 +1,105 @@
-# BookApp
+# 📖 BookMate
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+Bookmate is a fullstack web application for managing books and quotes, built with an Angular frontend and a C# (ASP.NET Core) backend.
 
-## Development server
+The application allows users to register, log in, and manage books and quotes through a secure REST API.  
+A strong focus of this project has been authentication and authorization, demonstrating secure user handling and protected API routes.
 
-To start a local development server, run:
+---
+
+## ✨ Key Features
+
+- User Registration & Login
+- JWT Authentication & Authorization
+- My Books / My Quotes
+- Add / Update / Delete Books & Quotes
+- Light / Dark Mode Toggle
+- Responsive Design
+- REST API Integration between Angular and ASP.NET Core
+
+---
+
+## 🔐 Authentication & Authorization
+
+Bookmate implements JWT-based authentication using ASP.NET Core.
+
+### Authentication Flow
+
+1. User registers via `/api/auth/register`
+2. User logs in via `/api/auth/login`
+3. On successful login, a JWT token is generated
+4. The token includes user claims and expiration time
+5. Protected endpoints require a valid JWT in the Authorization header
+
+### Security Features
+
+- Input validation and trimming
+- Case-insensitive username handling
+- Minimum username and password length validation
+- Duplicate username prevention
+- Token-based authentication using HMAC SHA256 signing
+- Configurable JWT key, issuer, and audience via `appsettings.json`
+- Token expiration (1 hour)
+
+This demonstrates secure client–server authentication and protected API route handling.
+
+Note: Passwords are stored in-memory for demonstration purposes only.
+
+---
+
+## 🖥 Tech Stack
+
+| Frontend | Backend | Data Handling |
+|----------|----------|---------------|
+| Angular | ASP.NET Core Web API | In-memory data storage |
+| TypeScript | C# | Temporary collection (resets on restart) |
+| HTML | | |
+| CSS | | |
+
+---
+
+## 📸 Screenshots
+
+### Login Page
+![Login](./screenshots/login.png)
+
+### Book List (Desktop)
+![Book List Desktop](./screenshots/book-list-desktop.png)
+
+### Book List (Mobile)
+![Book List Mobile](./screenshots/book-list-mobile.png)
+
+### Add Book Form
+![Add Book](./screenshots/add-book.png)
+
+### Light / Dark Mode
+![Theme Toggle](./screenshots/theme-toggle.gif)
+
+---
+
+## 🛠 Installation
+
+### Backend (ASP.NET Core)
 
 ```bash
+cd BookApi
+dotnet restore
+dotnet run
+```
+API runs on: http://localhost:8080
+
+---
+
+### Frontend (Angular)
+
+```bash
+cd book-app
+npm install
 ng serve
 ```
+Frontend runs on: http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 👩‍💻 Author
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Michelle Lee  
+GitHub: https://github.com/ritsumel
