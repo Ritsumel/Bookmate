@@ -101,5 +101,4 @@ Frontend runs on: http://localhost:4200
 
 ## 👩‍💻 Author
 
-Michelle Lee  
-GitHub: https://github.com/ritsumel
+[Michelle Lee](https://github.com/ritsumel)
