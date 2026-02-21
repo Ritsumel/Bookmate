@@ -1,4 +1,4 @@
-# 📖 BookMate
+# 📖 Bookmate
 
 Bookmate is a fullstack web application for managing books and quotes, built with an Angular frontend and a C# (ASP.NET Core) backend.
 
