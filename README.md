@@ -54,7 +54,7 @@ Note: Passwords are stored in-memory for demonstration purposes only.
 | Angular | ASP.NET Core Web API | In-memory data storage |
 | TypeScript | C# | Temporary collection (resets on restart) |
 | HTML | | |
-| CSS | | |
+| SCSS | | |
 
 ---
 
