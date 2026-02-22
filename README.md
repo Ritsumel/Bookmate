@@ -7,6 +7,13 @@ A strong focus of this project has been authentication and authorization, demons
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Live Application:** earnest-vacherin-96975e.netlify.app
+🔗 **API Endpoint:** https://bookapp-qs07.onrender.com/api
+
+---
+
 ## ✨ Key Features
 
 - User Registration & Login
