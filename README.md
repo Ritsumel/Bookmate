@@ -9,8 +9,8 @@ A strong focus of this project has been authentication and authorization, demons
 
 ## 🚀 Live Demo
 
-- 🔗 **Live Application:** earnest-vacherin-96975e.netlify.app
-- 🔗 **API Endpoint:** https://bookapp-qs07.onrender.com/api
+- 🔗 [Bookmate Demo](https://earnest-vacherin-96975e.netlify.app)
+- 🔗 [REST API](https://bookapp-qs07.onrender.com/api)
 
 ---
 
